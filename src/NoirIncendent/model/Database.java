@@ -2,7 +2,7 @@ package NoirIncendent.model;
 
 import java.sql.Connection;
 import java.sql.Statement;
-
+// test
 public class Database {
     private Connection connection;
     private Statement statement;
