@@ -30,6 +30,14 @@ CREATE TABLE Rooms (
 -- Insert Room data into DB
 INSERT INTO [Rooms] ([RoomID], [RoomName], [RoomDescription], [InstanceName],[PlayerID], [Solved]) VALUES (1, 'Spawn', 'Dark Alley', 'A human stench envelops you. Buildings scatter the alley, danger is here. You see Alex''s broken pocket watch on the floor.', 1, 'false');
 
+--tremya
+-- 'Abandonded Club', 'Dark Alley', 'A human stench envelops you. Buildings scatter the alley, danger is here. You see Alex''s broken pocket watch on the floor.'
+--'Abandonded Club', 'Special Room', 'A slight noise comes from a room. Goes to see what the noise was, a rat runs across. You see footprints through the dust as if somone had been in the room.'
+--'Abandonded Club', 'Reflections', 'A trail of broken class is outside the door catches your attention. Blood is on some pieces, be careful. Many miirors are in this room which gives you an illusion. A presence is felt every way you turn. '
+--'Abandonded Club', 'Red Light', 'Red lights are flickering. You remember Alex''s favorite color is red. Nothing is really in this room to see so you exit.'
+--'Abandonded Club', 'Edge', 'This is the only room that has not been checked. You began to walk back out then notice something on the floor. It is Alex''s ring that his father gave him.'
+
+--melissa
 
 
 -- Mob Table
