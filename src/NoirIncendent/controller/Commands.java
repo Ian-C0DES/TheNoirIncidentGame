@@ -1,24 +1,27 @@
 package NoirIncendent.controller;
 
 import NoirIncendent.gameExceptions.GameException;
+import NoirIncendent.model.Database;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
+import java.util.Locale;
 
 
 class Commands {
     
-    protected static final java.util.List<Character> VALID_DIRECTIONS = Arrays.asList('W', 'N', 'S', 'E', 'U', 'D');
-    protected static final java.util.List<Character> ITEM_COMMANDS = Arrays.asList('I', 'R', 'G');
+    protected static final List<Character> VALID_DIRECTIONS = Arrays.asList('W', 'N', 'S', 'E', 'U', 'D');
+    protected static final List<Character> ITEM_COMMANDS = Arrays.asList('I', 'R', 'G');
     public static final int EXIT_COMMAND = 5;
     private Player player;
-    
+    private ArrayList<Room> rooms;
     /**
      * Method Commands
      * Constructor for the Commands class
      * Instatiates a new player object for tracking inventory in the game
      */
     Commands() {
-        // TODO - implement Commands.Commands
         throw new UnsupportedOperationException();
     }
     
@@ -36,7 +39,24 @@ class Commands {
      * @throws GameException
      */
     private int validateCommand(String cmdLine) throws GameException {
-        // TODO - implement Commands.validateCommand
+        cmdLine = cmdLine.toLowerCase();
+        switch (cmdLine) {
+            case ("s"), ("n"), ("e") , ("w"), ("u") , ("d")  -> {
+                return 1;
+            }
+            case ("g"), ("r"), ("i")  -> {
+                return 2;
+            }
+            case ("l") -> {
+                return 3;
+            }
+            case ("b")  -> {
+                return 4;
+            }
+            case ("x")  -> {
+                executeCommand("exit");
+            }
+        }
         throw new UnsupportedOperationException();
     }
     
@@ -50,9 +70,18 @@ class Commands {
      * @throws GameException
      */
     protected String executeCommand(String cmd) throws GameException {
-        
-        // TODO - implement Commands.executeCommand
-        ;
+        int cmdType = validateCommand(cmd);
+        switch (cmdType){
+            case (1):
+                move(cmd);
+            case (2):
+                itemCommand(cmd);
+            case (3):
+                int locale = player.getLocation();
+                rooms.get(locale).toString();
+        }
+
+
         return cmd;
     }
     

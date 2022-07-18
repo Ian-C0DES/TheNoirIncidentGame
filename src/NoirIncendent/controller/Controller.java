@@ -4,6 +4,8 @@ package NoirIncendent.controller;
 import NoirIncendent.gameExceptions.GameException;
 import NoirIncendent.view.GameView;
 
+import java.util.Scanner;
+
 public class Controller {
     
     public static final int FIRST_ROOM = 1;
@@ -14,9 +16,8 @@ public class Controller {
      * Constructor for the GameController class
      * Instatiates the Commands object for the game
      */
-    public Controller() {
-        // TODO - implement GameController.GameController
-        throw new UnsupportedOperationException();
+    public Controller(Commands commands) {
+        this.commands = commands;
     }
     
     /**
@@ -27,7 +28,6 @@ public class Controller {
      * @throws GameException - if the first room is not found.
      */
     public String displayFirstRoom() throws GameException {
-
 
         return null;
     }
