@@ -7,6 +7,8 @@ public class Player extends User {
     public static final int MAX_INVENTORY_SPACE = 5;
     private int id;
 
+    int location;
+
     public Player(String name, String healthPoints, String damage, String maxHealth, Item[] inventory, String newID)
     {
         super(name, healthPoints,damage);
@@ -14,7 +16,13 @@ public class Player extends User {
         this.setMaxHealth(maxHealth);
         this.setId(newID);
     }
+    public int getLocation() {
+        return location;
+    }
 
+    public void setLocation(int location) {
+        this.location = location;
+    }
     public Item[] getInventory() {
         return inventory;
     }
@@ -49,5 +57,6 @@ public class Player extends User {
             this.id = 1;
             System.out.println("ID defaulted");
         }
+
     }
 }

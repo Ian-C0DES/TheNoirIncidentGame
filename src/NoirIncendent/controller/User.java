@@ -38,9 +38,6 @@ public class User {
             System.out.println("Health defaulted");
         }
     }
-//        finally {
-//            this.healthPoints()
-//        }
 
     public int getDamage() {
         return damage;
