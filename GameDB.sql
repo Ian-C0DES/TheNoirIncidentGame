@@ -76,6 +76,11 @@ INSERT INTO [Rooms] ([RoomID],  [InstanceName],[RoomName], [RoomDescription],[Pl
 
 
 
+
+
+
+
+
 -- Mob Table
 CREATE TABLE Mobs (
     MobIndex INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -128,14 +133,15 @@ CREATE TABLE Items (
 );
 
 -- Insert Item data into DB
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (19, 'Switch-Blade', 'this item increases your Damage. It is a wooden holster with brass lining that has a blade inside.', 25, 1);
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (15, 'Rodent Poison', 'this item increases your Damage. The color is green and is shaped like a tablet and has the smell of old fish.', 15, 1);
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (8, 'Pepper Spray', 'this item increases your Damage. It is a black tiny bottle with a nozzle attached to side with a red button on the top.' , 12, 1);
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (4, 'Throwing star', 'this item increases your Damage. It is a 5 sided razor sharp disk shaped object with a black and gold shiny gloss.' , 8, 1);
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue],[PlayerID]) VALUES (24, 'Gumball', 'this item increases your Damage. It is a round purple ball the size of a pebble in a wrapper labeled gumball. ', 30, 1);
- INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (30, 'Katana', 'this item does more Damage and is a long curved single edged sword with a black leather grip. ', 35, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (19, 'Switch-Blade', 'this item increases your Damage. It is a wooden holster with brass lining that has a blade inside.', 25, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (15, 'Rodent Poison', 'this item increases your Damage. The color is green and is shaped like a tablet and has the smell of old fish.', 15, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (8, 'Pepper Spray', 'this item increases your Damage. It is a black tiny bottle with a nozzle attached to side with a red button on the top.' , 12, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (4, 'Throwing star', 'this item increases your Damage. It is a 5 sided razor sharp disk shaped object with a black and gold shiny gloss.' , 8, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue],[PlayerID]) VALUES (24, 'Gumball', 'this item increases your Damage. It is a round purple ball the size of a pebble in a wrapper labeled gumball. ', 30, 1);
+INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (30, 'Katana', 'this item does more Damage and is a long curved single edged sword with a black leather grip. ', 35, 1);
 INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (31, 'Brass Knuckles', 'this item increases your Damage. It is made out brass and has four holes meant for the fingers with an extended palm grip. ', 35, 1);
 INSERT INTO [Items] ([ItemID], [ItemName], [ItemDescription], [ItemValue], [PlayerID]) VALUES (28, 'Stick', 'this item increases your Damage. The stick is a slender foot long and is made out of maple wood. ', 40, 1);
+
 
 
 -- Inventory Table
